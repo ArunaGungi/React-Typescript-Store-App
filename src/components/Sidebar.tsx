@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useFilter } from './FilterContext';
 
 const Sidebar = () => {
@@ -11,7 +11,6 @@ const Sidebar = () => {
         setMinPrice,
         maxPrice,
         setMaxPrice,
-        keyword,
         setKeyword
     } = useFilter();
 
