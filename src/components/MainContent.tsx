@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useFilter } from './FilterContext'
 import { Tally3 } from 'lucide-react';
 import axios from 'axios';
@@ -8,15 +8,10 @@ const MainContent = () => {
 
     const {
         searchQuery,
-        setSearchQuery,
         selectedCategory,
-        setSelectedCategory,
         minPrice,
-        setMinPrice,
         maxPrice,
-        setMaxPrice,
         keyword,
-        setKeyword
     } = useFilter();
 
     const [products, setProducts] = useState<any[]>([]);
